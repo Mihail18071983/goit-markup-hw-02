@@ -14,9 +14,14 @@
     /* --badge-bg-color: #eeeeee; */
     /* --badge-color: #546269; */
  }  
+
 body {
     background-color: #E5E5E5;
+    color: var(--main-color);
     font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .accent {
