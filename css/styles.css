@@ -39,6 +39,7 @@ li a,
   text-decoration: none;
   font-family: inherit;
   font-style: normal;
+  padding-left: 215px;
 }
 
 .visually-hidden {
@@ -53,33 +54,32 @@ li a,
   clip-path: inset(50%);
   margin: -1px;
 }
+ 
+.accent {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
 
 /* header */
 .header {
-  background-color: var(--main-bc-color);
-}
-
-.container {
+  background-color: var(--main-light-color);
   width: 1600px;
 }
-/* padding: 40px 0 0;    */
-/* align-items: center; */
-/* margin-bottom: 80px; */
 
-.container {
-  background-color: var(--main-bc-color);
+.header>.container {
+  width: 1600px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-.menu-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  justify-content: space-around;
-}
 .logo {
   font-family: var(--secondary-font-family);
   font-style: 700;
@@ -88,13 +88,59 @@ li a,
   color: var(--main-dark-color);
 }
 
-.accent {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+
+.menu-list, .contacts {
+  display: flex; 
+  justify-content: start;
+  align-items: center;
+ 
 }
+
+.menu-item:not(:first-child) {
+  margin-right: 50px;
+  }
+
+.menu-link {
+Font-family: var(--main-font-family);
+font-weight: 500;
+Font-size: 14px;
+Line-height: 1.14;
+Letter-spacing: 2%;
+color:var(--secondary-color);
+}
+
+
+
+.menu-link:hover, 
+.menu-link:focus,
+.footter-mail:hover
+{
+  color:var(--accent-color);}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus,
+.btn-tytle:hover,
+.btn-tytle:focus
+  {
+  color:var(--main-light-color);
+  background-color: var(--accent-color);
+}
+
+.mail-ref, .phone-ref {
+Font-family: var(--main-font-family);
+font-weight: 500;
+Font-size: 14px;
+Line-height: 1.14;
+Letter-spacing: 2%;
+color:var(--main-color);
+}
+
+ .mail-ref:hover {
+  color:var(--accent-color);
+} 
+
+ /* header end */
+
 
 /* main */
 
@@ -120,21 +166,33 @@ li a,
   color: var(--main-light-color);
   text-align: center;
 }
+
 .btn-tytle {
   border: none;
-  background-color: transparent;
-  cursor: pointer;
+   cursor: pointer;
   font-family: inherit;
-  color: var(--main-light-color);
-  background-color: var(--accent-color);
+  color: var(--main-dark-color);
+  background-color: var(--fird-color);
   margin-top: 30px;
   margin-bottom: 200px;
+  padding: 10px 32px;
 }
+
+.portfolio-btn {
+  border: none;
+   cursor: pointer;
+  font-family: inherit;
+  color: var(--main-dark-color);
+  background-color: var(--fird-color);
+  margin-top: 30px;
+  margin-bottom: 200px; 
+}
+
 .peculiarities {
   margin-bottom: 95px;
 }
 
-.peculiarities-list {
+.peculiarities-list, .portfolio-list {
   background-color: var(--main-light-color);
   display: flex;
   flex-direction: row;
@@ -188,6 +246,8 @@ li a,
 
 .team {
   background-color: var(--fird-color);
+  padding-top: 190px;
+  padding-bottom: 90px ;
 }
 
 .team-hero {
@@ -220,6 +280,11 @@ li a,
   justify-content: space-around;
 }
 
+/* team-end */
+
+
+/* main end */
+
 /* footer */
 .footer {
   background-color: var(--secondary-bc-color);
@@ -233,4 +298,59 @@ li a,
   font-size: 14px;
   line-height: 1.46;
   letter-spacing: 3%;
+}
+
+.footter-mail, .footer-phone  {
+Font-family: inherit;
+font-weight: 400;
+Font-size: 14px;
+Line-height: 1.46;
+Letter-spacing: 3%;
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+footer>.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+
+/* footer end */
+
+/* main p2 */
+
+.exemple-item {
+  width: 370px;
+}
+
+.exemple-sign {
+font-weight: 700;
+Font-size: 18px;
+Line-height: 1.71;
+color:var(--secondary-color);
+text-align: left; 
+padding: 0 25px;
+margin-bottom: 5px;
+}
+
+.exemple-category {
+font-weight: 400;
+Font-size: 16px;
+Line-height: 1.6;
+text-align: left; 
+Letter-spacing: 3%;
+padding-right: 24px;
+padding-left: 24px;
+padding-top: 0;
+padding-bottom:20px ;
+
+}
+
+.exemple-list>img {
+  margin-bottom: 20px;
+}
+
+.сurrent {
+  color: var(--accent-color);
 }
