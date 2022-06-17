@@ -17,6 +17,7 @@
   /* --badge-color: #546269; */
 }
 
+
 body {
   background-color: var(--main-light-color);
   color: var(--main-color);
@@ -25,8 +26,17 @@ body {
   font-weight: 400;
   font-style: normal;
   width: 1600px;
+
+  /* еспериментирование с рамкой */
+  border: 1px solid #f00;
 }
 /* common css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -38,7 +48,7 @@ li a,
 .logo {
   text-decoration: none;
   font-style: normal;
-  padding-left: 215px;
+  /* padding-left: 215px; */
 }
 
 .visually-hidden {
@@ -70,11 +80,11 @@ li a,
 }
 
 .header>.container {
-  width: 1600px;
+  width: 1600px; 
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -85,19 +95,39 @@ li a,
   font-size: 26px;
   line-height: 1.12;
   color: var(--main-dark-color);
+  flex-basis: 130px;
+  /* padding: 115; */
+  margin-left: 50px;
+  
 }
 
 
-.menu-list, .contacts {
-  display: flex; 
-  justify-content: start;
-  align-items: center;
+.menu-list  {
+  display: flex;  
+   /* justify-content: start; 
+   align-items: center;  */
  
 }
+.contacts {
+  display: flex;
+  
+}
+.contact-mail {
+  /* margin-left:150px; */
+  margin-right: 50px;
+}
+
+/* .contat-phone {
+  margin-right: 215px;
+} */
 
 .menu-item:not(:first-child) {
-  margin-right: 50px;
+   margin-right: 50px; 
   }
+    .menu-item:first-child
+    {
+      margin-right: 50px
+    }
 
 .menu-link {
 Font-family: var(--main-font-family);
