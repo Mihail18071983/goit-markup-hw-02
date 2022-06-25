@@ -72,6 +72,12 @@ li a,
   color: var(--accent-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* header */
 .header {
@@ -227,6 +233,9 @@ color:var(--main-color);
   flex-direction: row;
   justify-content: space-around;
 }
+.portfolio {
+  margin-bottom: 95px;
+  }
 .content-tytle {
   color: var(--secondary-color);
   font-family: inherit;
@@ -377,9 +386,30 @@ padding-bottom:20px ;
 }
 
 .exemple-list>img {
-  margin-bottom: 20px;
+   margin-bottom: 20px; 
 }
 
 .сurrent {
   color: var(--accent-color);
+}
+.exemple-container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px blue;
+}
+
+.exemple-list {
+  outline: 1px tomato;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exemple-item {
+  outline: 1px solid teal;
+  flex-basis: calc(100%/3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
