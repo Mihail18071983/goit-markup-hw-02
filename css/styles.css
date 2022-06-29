@@ -27,9 +27,7 @@ body {
   font-style: normal;
   width: 1600px;
 
-  /* еспериментирование с рамкой */
-  border: 1px solid #f00;
-}
+ }
 /* common css */
 *,
 *::before,
@@ -398,7 +396,7 @@ padding-bottom:20px ;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px blue;
+  
 }
 
 .exemple-list {
@@ -408,7 +406,6 @@ padding-bottom:20px ;
 }
 
 .exemple-item {
-  outline: 1px solid teal;
   flex-basis: calc(100%/3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
