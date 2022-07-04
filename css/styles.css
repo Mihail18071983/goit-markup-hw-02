@@ -11,9 +11,7 @@
   --secondary-color: #212121;
   --fird-color: #f5f4fa;
   --secondary-bc-color: #2f303a;
-  /* --border-color: #c4c4c4; */
-  /* --badge-bg-color: #eeeeee; */
-  /* --badge-color: #546269; */
+ 
 }
 
 body {
@@ -113,6 +111,7 @@ body {
 /* шапка */
 .hat {
   background-color: var(--secondary-bc-color);
+  
 }
 
 .hat-tytle {
@@ -136,7 +135,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
-}
+ }
 
 .portfolio-btn {
   font-weight: 500;
@@ -237,7 +236,7 @@ body {
 .footter-mail,
 .footer-phone {
   font-size: 14px;
-  line-height: 1.46;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
